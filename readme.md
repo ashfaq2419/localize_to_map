@@ -3,4 +3,4 @@
 
 python3 -m streamlit run app.py
 # or
-streamlit run app.py
+streamlit run app.py# localize_to_map
