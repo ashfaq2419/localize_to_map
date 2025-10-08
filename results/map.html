@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49dde353bc3172f021b2bcca521008b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_49dde353bc3172f021b2bcca521008b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_49dde353bc3172f021b2bcca521008b2 = L.map(
+                "map_49dde353bc3172f021b2bcca521008b2",
+                {
+                    center: [24.40744241425124, 54.57656359579732],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_49dde353bc3172f021b2bcca521008b2);
+
+            
+
+        
+    
+            var tile_layer_355b00d5fdb440a62fc3fc2f7cb13b20 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_355b00d5fdb440a62fc3fc2f7cb13b20.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_26e29b62c2d11b7e5289307108620c2b = L.marker(
+                [24.40744241425124, 54.57656359579732],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_80cb6321549d1da9020b2ea10e999bd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d98bd2ed1f9f957237eb90fc2f1885f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_d7a2ce97d13a6a38169f29d2617df3bc = $(`<div id="html_d7a2ce97d13a6a38169f29d2617df3bc" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 1<br><b>Label:</b> 1<br><b>Time:</b> 2025-04-15 13:48:29.998Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/1/data.json</div>`)[0];
+                popup_0d98bd2ed1f9f957237eb90fc2f1885f.setContent(html_d7a2ce97d13a6a38169f29d2617df3bc);
+            
+        
+
+        marker_26e29b62c2d11b7e5289307108620c2b.bindPopup(popup_0d98bd2ed1f9f957237eb90fc2f1885f)
+        ;
+
+        
+    
+    
+                marker_26e29b62c2d11b7e5289307108620c2b.setIcon(icon_80cb6321549d1da9020b2ea10e999bd9);
+            
+    
+            var marker_e428cc60ef9889d96195cff0b7b62426 = L.marker(
+                [24.409150859922995, 54.577431755536935],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_dd7233cfa057a3fa88b28235f69620c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f25f4389f98cfaa33cb376c6934d273 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8da16ceb5bad8e7fefbdd51a26ad9ef1 = $(`<div id="html_8da16ceb5bad8e7fefbdd51a26ad9ef1" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 10<br><b>Label:</b> 10<br><b>Time:</b> 2025-04-15 13:59:57.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/10/data.json</div>`)[0];
+                popup_2f25f4389f98cfaa33cb376c6934d273.setContent(html_8da16ceb5bad8e7fefbdd51a26ad9ef1);
+            
+        
+
+        marker_e428cc60ef9889d96195cff0b7b62426.bindPopup(popup_2f25f4389f98cfaa33cb376c6934d273)
+        ;
+
+        
+    
+    
+                marker_e428cc60ef9889d96195cff0b7b62426.setIcon(icon_dd7233cfa057a3fa88b28235f69620c0);
+            
+    
+            var marker_07f75f083e3eb36dcf2a17b4fa9a581f = L.marker(
+                [24.408126468785824, 54.57627416593448],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_6d24eabbf1e24defb479cee49cf52014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d339219803395d0c6e638341ce0ed07 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3cf24618ff1c55f6e9000a3dd889295a = $(`<div id="html_3cf24618ff1c55f6e9000a3dd889295a" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 11<br><b>Label:</b> 11<br><b>Time:</b> 2025-04-15 14:03:26.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/11/data.json</div>`)[0];
+                popup_4d339219803395d0c6e638341ce0ed07.setContent(html_3cf24618ff1c55f6e9000a3dd889295a);
+            
+        
+
+        marker_07f75f083e3eb36dcf2a17b4fa9a581f.bindPopup(popup_4d339219803395d0c6e638341ce0ed07)
+        ;
+
+        
+    
+    
+                marker_07f75f083e3eb36dcf2a17b4fa9a581f.setIcon(icon_6d24eabbf1e24defb479cee49cf52014);
+            
+    
+            var marker_644190a74d6925809a0d0e317c285d94 = L.marker(
+                [24.40721342808046, 54.576180372437996],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_7edcd3c130ba32567936f8d4f81179a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfd555e0bc2a9d4a3907daeed9eec1e4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f745c63f197c8689719c18d9b8ed2e32 = $(`<div id="html_f745c63f197c8689719c18d9b8ed2e32" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 2<br><b>Label:</b> 2<br><b>Time:</b> 2025-04-15 13:49:27.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/2/data.json</div>`)[0];
+                popup_dfd555e0bc2a9d4a3907daeed9eec1e4.setContent(html_f745c63f197c8689719c18d9b8ed2e32);
+            
+        
+
+        marker_644190a74d6925809a0d0e317c285d94.bindPopup(popup_dfd555e0bc2a9d4a3907daeed9eec1e4)
+        ;
+
+        
+    
+    
+                marker_644190a74d6925809a0d0e317c285d94.setIcon(icon_7edcd3c130ba32567936f8d4f81179a1);
+            
+    
+            var marker_8193b50ae80e28f98bceadc96367d313 = L.marker(
+                [24.407108193286142, 54.5755741093816],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_fac5d61c6758846bfbc8149327c8eaae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c6f537a105724fb432abb3b31daf744 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9a6371bd078d7611d92a441e7969a85e = $(`<div id="html_9a6371bd078d7611d92a441e7969a85e" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 3<br><b>Label:</b> 3<br><b>Time:</b> 2025-04-15 13:50:42.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/3/data.json</div>`)[0];
+                popup_6c6f537a105724fb432abb3b31daf744.setContent(html_9a6371bd078d7611d92a441e7969a85e);
+            
+        
+
+        marker_8193b50ae80e28f98bceadc96367d313.bindPopup(popup_6c6f537a105724fb432abb3b31daf744)
+        ;
+
+        
+    
+    
+                marker_8193b50ae80e28f98bceadc96367d313.setIcon(icon_fac5d61c6758846bfbc8149327c8eaae);
+            
+    
+            var marker_16a70368ff29c72802347cae1e050fc2 = L.marker(
+                [24.40751310935781, 54.57495313139523],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_a68f2011122e3827b2be169e722c6725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b59eb20aec740241656852f53cce7a62 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dea641d26a47be093744237fe7ebf3dc = $(`<div id="html_dea641d26a47be093744237fe7ebf3dc" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 5<br><b>Label:</b> 5<br><b>Time:</b> 2025-04-15 13:53:01.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/5/data.json</div>`)[0];
+                popup_b59eb20aec740241656852f53cce7a62.setContent(html_dea641d26a47be093744237fe7ebf3dc);
+            
+        
+
+        marker_16a70368ff29c72802347cae1e050fc2.bindPopup(popup_b59eb20aec740241656852f53cce7a62)
+        ;
+
+        
+    
+    
+                marker_16a70368ff29c72802347cae1e050fc2.setIcon(icon_a68f2011122e3827b2be169e722c6725);
+            
+    
+            var marker_949de09f29bb7c9738057c0d3526b47e = L.marker(
+                [24.408085240367516, 54.574703265325034],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_095ff66dd565ef27c39379591c6cad3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f6732e16d59099f9aa79f53083d04d30 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_556db81dfd8844e4efe8bdd3e73a61ba = $(`<div id="html_556db81dfd8844e4efe8bdd3e73a61ba" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 6<br><b>Label:</b> 6<br><b>Time:</b> 2025-04-15 13:54:15.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/6/data.json</div>`)[0];
+                popup_f6732e16d59099f9aa79f53083d04d30.setContent(html_556db81dfd8844e4efe8bdd3e73a61ba);
+            
+        
+
+        marker_949de09f29bb7c9738057c0d3526b47e.bindPopup(popup_f6732e16d59099f9aa79f53083d04d30)
+        ;
+
+        
+    
+    
+                marker_949de09f29bb7c9738057c0d3526b47e.setIcon(icon_095ff66dd565ef27c39379591c6cad3d);
+            
+    
+            var marker_45cc5f60bddb6dbba38b7eb6d058f023 = L.marker(
+                [24.40866747872604, 54.575440082749886],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_204df7b38b81920a877a31bf02bb2520 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78853eacc6f290f12ea4cf368ea8e01d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_94f9eeda5b2b910d648699f762498a90 = $(`<div id="html_94f9eeda5b2b910d648699f762498a90" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 7<br><b>Label:</b> 7<br><b>Time:</b> 2025-04-15 13:56:01.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/7/data.json</div>`)[0];
+                popup_78853eacc6f290f12ea4cf368ea8e01d.setContent(html_94f9eeda5b2b910d648699f762498a90);
+            
+        
+
+        marker_45cc5f60bddb6dbba38b7eb6d058f023.bindPopup(popup_78853eacc6f290f12ea4cf368ea8e01d)
+        ;
+
+        
+    
+    
+                marker_45cc5f60bddb6dbba38b7eb6d058f023.setIcon(icon_204df7b38b81920a877a31bf02bb2520);
+            
+    
+            var marker_ba9c76d706707a40237562d8cddc1f10 = L.marker(
+                [24.40885603750707, 54.57584453560165],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_1fe6904596d26fa46aeebe6501ab25e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_240539ff926f664f02d9474c260bdcb5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a094a340c2c883a9ea1fe65526a9fd4a = $(`<div id="html_a094a340c2c883a9ea1fe65526a9fd4a" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 8<br><b>Label:</b> 8<br><b>Time:</b> 2025-04-15 13:56:50.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/8/data.json</div>`)[0];
+                popup_240539ff926f664f02d9474c260bdcb5.setContent(html_a094a340c2c883a9ea1fe65526a9fd4a);
+            
+        
+
+        marker_ba9c76d706707a40237562d8cddc1f10.bindPopup(popup_240539ff926f664f02d9474c260bdcb5)
+        ;
+
+        
+    
+    
+                marker_ba9c76d706707a40237562d8cddc1f10.setIcon(icon_1fe6904596d26fa46aeebe6501ab25e9);
+            
+    
+            var marker_6c7fd497a97934cf2b482dd1f065e752 = L.marker(
+                [24.409061895921464, 54.57666197087404],
+                {
+}
+            ).addTo(feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7);
+        
+    
+            var icon_d25bd5fe54da333e0020832fcd3d30d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caee4a3c7ba98adef7aece56ae549dab = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e4ce209a9b900dd7bf414ce685664dd3 = $(`<div id="html_e4ce209a9b900dd7bf414ce685664dd3" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 1<br><b>Record:</b> 9<br><b>Label:</b> 9<br><b>Time:</b> 2025-04-15 13:58:30.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/9/data.json</div>`)[0];
+                popup_caee4a3c7ba98adef7aece56ae549dab.setContent(html_e4ce209a9b900dd7bf414ce685664dd3);
+            
+        
+
+        marker_6c7fd497a97934cf2b482dd1f065e752.bindPopup(popup_caee4a3c7ba98adef7aece56ae549dab)
+        ;
+
+        
+    
+    
+                marker_6c7fd497a97934cf2b482dd1f065e752.setIcon(icon_d25bd5fe54da333e0020832fcd3d30d2);
+            
+    
+            feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_509ed7600fed6f58188aefe00cbea646 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_963a49c2826e1060323b34efb42ea58b = L.marker(
+                [24.408096503481993, 54.576266873678726],
+                {
+}
+            ).addTo(feature_group_509ed7600fed6f58188aefe00cbea646);
+        
+    
+            var icon_ae19b5cdde55989c2b7ebc33f1773cbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87d17ffb4cdf97b4556d2c3ac0b721e9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e83a9d7351c75847d413219e66306790 = $(`<div id="html_e83a9d7351c75847d413219e66306790" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 1<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/object_records/1/data.json</div>`)[0];
+                popup_87d17ffb4cdf97b4556d2c3ac0b721e9.setContent(html_e83a9d7351c75847d413219e66306790);
+            
+        
+
+        marker_963a49c2826e1060323b34efb42ea58b.bindPopup(popup_87d17ffb4cdf97b4556d2c3ac0b721e9)
+        ;
+
+        
+    
+    
+                marker_963a49c2826e1060323b34efb42ea58b.setIcon(icon_ae19b5cdde55989c2b7ebc33f1773cbf);
+            
+    
+            var marker_bd23a733ffd6f2c1b4dd50a637a28112 = L.marker(
+                [24.437621689361222, 54.60991640604572],
+                {
+}
+            ).addTo(feature_group_509ed7600fed6f58188aefe00cbea646);
+        
+    
+            var icon_87fceed25e7fb9f9a283146820b0b881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e43002b26531606951885ea6ca1ca88f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d58bbdd60b23c57bf6843aff9d5cdaee = $(`<div id="html_d58bbdd60b23c57bf6843aff9d5cdaee" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 4<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/object_records/1/data.json</div>`)[0];
+                popup_e43002b26531606951885ea6ca1ca88f.setContent(html_d58bbdd60b23c57bf6843aff9d5cdaee);
+            
+        
+
+        marker_bd23a733ffd6f2c1b4dd50a637a28112.bindPopup(popup_e43002b26531606951885ea6ca1ca88f)
+        ;
+
+        
+    
+    
+                marker_bd23a733ffd6f2c1b4dd50a637a28112.setIcon(icon_87fceed25e7fb9f9a283146820b0b881);
+            
+    
+            var marker_12edd39caa2194a5725e2890d601bcf6 = L.marker(
+                [24.045464669945257, 55.847389485839855],
+                {
+}
+            ).addTo(feature_group_509ed7600fed6f58188aefe00cbea646);
+        
+    
+            var icon_4022b922bdd332bc7be1645d9f20a051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0210fdc09a88b36c7b3c0ce80d710a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_647bb945809d7bcbc488736aaf684b12 = $(`<div id="html_647bb945809d7bcbc488736aaf684b12" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 6<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/object_records/1/data.json</div>`)[0];
+                popup_e0210fdc09a88b36c7b3c0ce80d710a7.setContent(html_647bb945809d7bcbc488736aaf684b12);
+            
+        
+
+        marker_12edd39caa2194a5725e2890d601bcf6.bindPopup(popup_e0210fdc09a88b36c7b3c0ce80d710a7)
+        ;
+
+        
+    
+    
+                marker_12edd39caa2194a5725e2890d601bcf6.setIcon(icon_4022b922bdd332bc7be1645d9f20a051);
+            
+    
+            var marker_f4f786c362eca61be9b2db463f34b0ee = L.marker(
+                [24.412801307641683, 54.554334785840055],
+                {
+}
+            ).addTo(feature_group_509ed7600fed6f58188aefe00cbea646);
+        
+    
+            var icon_2c303ad7cf4655da0d732a9ddc211b60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e6c7f89c11756c222f8b31c6c451745 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c069fd5c75b88466fb7f29f20ca64fb = $(`<div id="html_0c069fd5c75b88466fb7f29f20ca64fb" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 8<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/object_records/1/data.json</div>`)[0];
+                popup_9e6c7f89c11756c222f8b31c6c451745.setContent(html_0c069fd5c75b88466fb7f29f20ca64fb);
+            
+        
+
+        marker_f4f786c362eca61be9b2db463f34b0ee.bindPopup(popup_9e6c7f89c11756c222f8b31c6c451745)
+        ;
+
+        
+    
+    
+                marker_f4f786c362eca61be9b2db463f34b0ee.setIcon(icon_2c303ad7cf4655da0d732a9ddc211b60);
+            
+    
+            var marker_1627a966e600689572058e3cc844930d = L.marker(
+                [24.410694, 54.5705],
+                {
+}
+            ).addTo(feature_group_509ed7600fed6f58188aefe00cbea646);
+        
+    
+            var icon_ad4463cc95dc2b364a28e528e15557d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ecc61e1a8a7bf9e685c1bb60fa1abf2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_492b0fc337ac29f0a0bc35c7ce0433b7 = $(`<div id="html_492b0fc337ac29f0a0bc35c7ce0433b7" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 9<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/object_records/1/data.json</div>`)[0];
+                popup_9ecc61e1a8a7bf9e685c1bb60fa1abf2.setContent(html_492b0fc337ac29f0a0bc35c7ce0433b7);
+            
+        
+
+        marker_1627a966e600689572058e3cc844930d.bindPopup(popup_9ecc61e1a8a7bf9e685c1bb60fa1abf2)
+        ;
+
+        
+    
+    
+                marker_1627a966e600689572058e3cc844930d.setIcon(icon_ad4463cc95dc2b364a28e528e15557d7);
+            
+    
+            feature_group_509ed7600fed6f58188aefe00cbea646.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_bd104e859109eb9f29dd0d278fb081bc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e448ff26ffc3f0163e0088ba56c04824 = L.marker(
+                [24.439073939188976, 54.61617032355628],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_43e1726e2d8804baf73676fb500abe80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c74714ac8c83a7214e4679f2e74c0669 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b2d7b53b8682236d5964a0910605dfec = $(`<div id="html_b2d7b53b8682236d5964a0910605dfec" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 1<br><b>Label:</b> 1<br><b>Time:</b> 2025-04-18 13:58:08.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/1/data.json</div>`)[0];
+                popup_c74714ac8c83a7214e4679f2e74c0669.setContent(html_b2d7b53b8682236d5964a0910605dfec);
+            
+        
+
+        marker_e448ff26ffc3f0163e0088ba56c04824.bindPopup(popup_c74714ac8c83a7214e4679f2e74c0669)
+        ;
+
+        
+    
+    
+                marker_e448ff26ffc3f0163e0088ba56c04824.setIcon(icon_43e1726e2d8804baf73676fb500abe80);
+            
+    
+            var marker_ffcf4a106f853bbfef66ccf78cb25bb9 = L.marker(
+                [24.434962991360507, 54.61364927843434],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_57055b6fdba9289ea4a8b4825240aa7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b68e55849f59bd870b1beeb21d5b8fd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fc5bad7ed724b0e85e301787c47b63cb = $(`<div id="html_fc5bad7ed724b0e85e301787c47b63cb" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 10<br><b>Label:</b> 10<br><b>Time:</b> 2025-04-19 11:08:01.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/10/data.json</div>`)[0];
+                popup_2b68e55849f59bd870b1beeb21d5b8fd.setContent(html_fc5bad7ed724b0e85e301787c47b63cb);
+            
+        
+
+        marker_ffcf4a106f853bbfef66ccf78cb25bb9.bindPopup(popup_2b68e55849f59bd870b1beeb21d5b8fd)
+        ;
+
+        
+    
+    
+                marker_ffcf4a106f853bbfef66ccf78cb25bb9.setIcon(icon_57055b6fdba9289ea4a8b4825240aa7e);
+            
+    
+            var marker_9e18ea74ac824a022106ff8051bd7fbb = L.marker(
+                [24.439227513472133, 54.61075354586979],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_c04168cd7a8da84be9e2c6334cf83761 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_894fe1fcec61162f8942c2a7681f017a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_80ce56c140a8d1a5fbea9b781b8a8d9e = $(`<div id="html_80ce56c140a8d1a5fbea9b781b8a8d9e" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 3<br><b>Label:</b> 3<br><b>Time:</b> 2025-04-19 10:47:07.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/3/data.json</div>`)[0];
+                popup_894fe1fcec61162f8942c2a7681f017a.setContent(html_80ce56c140a8d1a5fbea9b781b8a8d9e);
+            
+        
+
+        marker_9e18ea74ac824a022106ff8051bd7fbb.bindPopup(popup_894fe1fcec61162f8942c2a7681f017a)
+        ;
+
+        
+    
+    
+                marker_9e18ea74ac824a022106ff8051bd7fbb.setIcon(icon_c04168cd7a8da84be9e2c6334cf83761);
+            
+    
+            var marker_9db4d09520546921475fee8cdc976f14 = L.marker(
+                [24.439830871024366, 54.60890366747563],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_e345af5d423a8fbfe1fca00042e992b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d164cf9ec40821f00f8df2b670e8ae9d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e6c61899758a50733736575271b40bbb = $(`<div id="html_e6c61899758a50733736575271b40bbb" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 4<br><b>Label:</b> 4<br><b>Time:</b> 2025-04-19 10:48:45.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/4/data.json</div>`)[0];
+                popup_d164cf9ec40821f00f8df2b670e8ae9d.setContent(html_e6c61899758a50733736575271b40bbb);
+            
+        
+
+        marker_9db4d09520546921475fee8cdc976f14.bindPopup(popup_d164cf9ec40821f00f8df2b670e8ae9d)
+        ;
+
+        
+    
+    
+                marker_9db4d09520546921475fee8cdc976f14.setIcon(icon_e345af5d423a8fbfe1fca00042e992b9);
+            
+    
+            var marker_702d77de4a33bd01449bad99114f4e32 = L.marker(
+                [24.436636175534094, 54.60619661000922],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_c225eb801ba5f2b3ba19404d4d3f3bfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58b9e75ca903aede4bbcd9059268fcb1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_31c38aaae30e0b25669329f6454aaa99 = $(`<div id="html_31c38aaae30e0b25669329f6454aaa99" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 6<br><b>Label:</b> 6<br><b>Time:</b> 2025-04-19 10:50:46.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/6/data.json</div>`)[0];
+                popup_58b9e75ca903aede4bbcd9059268fcb1.setContent(html_31c38aaae30e0b25669329f6454aaa99);
+            
+        
+
+        marker_702d77de4a33bd01449bad99114f4e32.bindPopup(popup_58b9e75ca903aede4bbcd9059268fcb1)
+        ;
+
+        
+    
+    
+                marker_702d77de4a33bd01449bad99114f4e32.setIcon(icon_c225eb801ba5f2b3ba19404d4d3f3bfa);
+            
+    
+            var marker_6a2304771e93a6d3a80fadcfe2573f15 = L.marker(
+                [24.438112145173392, 54.611496557792194],
+                {
+}
+            ).addTo(feature_group_bd104e859109eb9f29dd0d278fb081bc);
+        
+    
+            var icon_e2a67809bf618a8f6bed8c96e996c4cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43b0e31a72194315f3f446be902dc75 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_570b7a2f130de674ec9dfe81a41b9556 = $(`<div id="html_570b7a2f130de674ec9dfe81a41b9556" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 4<br><b>Record:</b> 8<br><b>Label:</b> 8<br><b>Time:</b> 2025-04-19 10:54:43.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/8/data.json</div>`)[0];
+                popup_c43b0e31a72194315f3f446be902dc75.setContent(html_570b7a2f130de674ec9dfe81a41b9556);
+            
+        
+
+        marker_6a2304771e93a6d3a80fadcfe2573f15.bindPopup(popup_c43b0e31a72194315f3f446be902dc75)
+        ;
+
+        
+    
+    
+                marker_6a2304771e93a6d3a80fadcfe2573f15.setIcon(icon_e2a67809bf618a8f6bed8c96e996c4cf);
+            
+    
+            feature_group_bd104e859109eb9f29dd0d278fb081bc.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_d97fd47669e1e33f15f3e46d2c9c7074 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cc254850982be14bb05d4240807fcd80 = L.marker(
+                [24.408096503481993, 54.576266873678726],
+                {
+}
+            ).addTo(feature_group_d97fd47669e1e33f15f3e46d2c9c7074);
+        
+    
+            var icon_9766df2134c478dfb3dd6995c8be2799 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a59ea24a8a5b665da9293e7c19763b9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3379c6320d0e01a3caffea0b15bbf421 = $(`<div id="html_3379c6320d0e01a3caffea0b15bbf421" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 1<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/object_records/1/data.json</div>`)[0];
+                popup_a59ea24a8a5b665da9293e7c19763b9c.setContent(html_3379c6320d0e01a3caffea0b15bbf421);
+            
+        
+
+        marker_cc254850982be14bb05d4240807fcd80.bindPopup(popup_a59ea24a8a5b665da9293e7c19763b9c)
+        ;
+
+        
+    
+    
+                marker_cc254850982be14bb05d4240807fcd80.setIcon(icon_9766df2134c478dfb3dd6995c8be2799);
+            
+    
+            var marker_f9262de458a3ba209cb4d003e0d288cc = L.marker(
+                [24.437621689361222, 54.60991640604572],
+                {
+}
+            ).addTo(feature_group_d97fd47669e1e33f15f3e46d2c9c7074);
+        
+    
+            var icon_91073c48d21442d5422f8f46de14da8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcbd1c35a69b1848c0b0c0eac4f3e576 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cccdb045340e1df6ec1297498040440 = $(`<div id="html_9cccdb045340e1df6ec1297498040440" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 4<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/object_records/1/data.json</div>`)[0];
+                popup_dcbd1c35a69b1848c0b0c0eac4f3e576.setContent(html_9cccdb045340e1df6ec1297498040440);
+            
+        
+
+        marker_f9262de458a3ba209cb4d003e0d288cc.bindPopup(popup_dcbd1c35a69b1848c0b0c0eac4f3e576)
+        ;
+
+        
+    
+    
+                marker_f9262de458a3ba209cb4d003e0d288cc.setIcon(icon_91073c48d21442d5422f8f46de14da8a);
+            
+    
+            var marker_2ef91f7d6283d5d5ff0da526616b4775 = L.marker(
+                [24.045464669945257, 55.847389485839855],
+                {
+}
+            ).addTo(feature_group_d97fd47669e1e33f15f3e46d2c9c7074);
+        
+    
+            var icon_c79eb0fd9e116963375c502c3de3b38e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5fa4610e36dfb89adb85c45be1e01cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29297495cf2f7023495f936a3cbc20b9 = $(`<div id="html_29297495cf2f7023495f936a3cbc20b9" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 6<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/object_records/1/data.json</div>`)[0];
+                popup_b5fa4610e36dfb89adb85c45be1e01cd.setContent(html_29297495cf2f7023495f936a3cbc20b9);
+            
+        
+
+        marker_2ef91f7d6283d5d5ff0da526616b4775.bindPopup(popup_b5fa4610e36dfb89adb85c45be1e01cd)
+        ;
+
+        
+    
+    
+                marker_2ef91f7d6283d5d5ff0da526616b4775.setIcon(icon_c79eb0fd9e116963375c502c3de3b38e);
+            
+    
+            var marker_29569606b5f887448515cd69380b5e1b = L.marker(
+                [24.412801307641683, 54.554334785840055],
+                {
+}
+            ).addTo(feature_group_d97fd47669e1e33f15f3e46d2c9c7074);
+        
+    
+            var icon_22995cd595b84fbf3ea644c45aaf4553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0812ba689cc7cbaba7a708e96810af30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_041a39ed99ad39379d2448fe507ece63 = $(`<div id="html_041a39ed99ad39379d2448fe507ece63" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 8<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/object_records/1/data.json</div>`)[0];
+                popup_0812ba689cc7cbaba7a708e96810af30.setContent(html_041a39ed99ad39379d2448fe507ece63);
+            
+        
+
+        marker_29569606b5f887448515cd69380b5e1b.bindPopup(popup_0812ba689cc7cbaba7a708e96810af30)
+        ;
+
+        
+    
+    
+                marker_29569606b5f887448515cd69380b5e1b.setIcon(icon_22995cd595b84fbf3ea644c45aaf4553);
+            
+    
+            var marker_0bff4537bca6bd63cffac677bd22c6f5 = L.marker(
+                [24.410694, 54.5705],
+                {
+}
+            ).addTo(feature_group_d97fd47669e1e33f15f3e46d2c9c7074);
+        
+    
+            var icon_3cfb3f65e5593d38d5fcacf5c7cd20ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3260076c5d511187f72e12273ef1ec05 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47c394f86772779e8c72afa7373f3c24 = $(`<div id="html_47c394f86772779e8c72afa7373f3c24" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 9<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/object_records/1/data.json</div>`)[0];
+                popup_3260076c5d511187f72e12273ef1ec05.setContent(html_47c394f86772779e8c72afa7373f3c24);
+            
+        
+
+        marker_0bff4537bca6bd63cffac677bd22c6f5.bindPopup(popup_3260076c5d511187f72e12273ef1ec05)
+        ;
+
+        
+    
+    
+                marker_0bff4537bca6bd63cffac677bd22c6f5.setIcon(icon_3cfb3f65e5593d38d5fcacf5c7cd20ac);
+            
+    
+            feature_group_d97fd47669e1e33f15f3e46d2c9c7074.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_ac40cd462aef7bf7c5919d301d87db74 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_be5685342aa314d65905cf87b73176f6 = L.marker(
+                [24.044916015133968, 55.84662711253003],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_0fd1384e753a8b306ed95a5ecf26c6cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_521e1b0cb7e4df9e1475bfd84731778c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8e04a3213b3172264b91103ec55e5f71 = $(`<div id="html_8e04a3213b3172264b91103ec55e5f71" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 1<br><b>Label:</b> 1<br><b>Time:</b> 2025-04-19 15:02:26.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/1/data.json</div>`)[0];
+                popup_521e1b0cb7e4df9e1475bfd84731778c.setContent(html_8e04a3213b3172264b91103ec55e5f71);
+            
+        
+
+        marker_be5685342aa314d65905cf87b73176f6.bindPopup(popup_521e1b0cb7e4df9e1475bfd84731778c)
+        ;
+
+        
+    
+    
+                marker_be5685342aa314d65905cf87b73176f6.setIcon(icon_0fd1384e753a8b306ed95a5ecf26c6cb);
+            
+    
+            var marker_a12829f9be9b599a8323853499894f4c = L.marker(
+                [24.04588458777111, 55.84697448898425],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_4bd609bc0cffa951a81ec344f6d69e88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e34d8b96d3f55b2bd5ec363991fbbbfd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_413290ea3123bada03ad2df65c77e2d7 = $(`<div id="html_413290ea3123bada03ad2df65c77e2d7" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 4<br><b>Label:</b> 4<br><b>Time:</b> 2025-04-19 15:05:28.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/4/data.json</div>`)[0];
+                popup_e34d8b96d3f55b2bd5ec363991fbbbfd.setContent(html_413290ea3123bada03ad2df65c77e2d7);
+            
+        
+
+        marker_a12829f9be9b599a8323853499894f4c.bindPopup(popup_e34d8b96d3f55b2bd5ec363991fbbbfd)
+        ;
+
+        
+    
+    
+                marker_a12829f9be9b599a8323853499894f4c.setIcon(icon_4bd609bc0cffa951a81ec344f6d69e88);
+            
+    
+            var marker_677f433dd37542f69cb433d2bf514916 = L.marker(
+                [24.046043406687843, 55.84754523992256],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_8bb8eb8081e9e35f9f7dc09b02442fb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a137db664f8499962a02dad6e1bdc13 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_888b4bc52d913ce683728b7df2cf5108 = $(`<div id="html_888b4bc52d913ce683728b7df2cf5108" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 5<br><b>Label:</b> 5<br><b>Time:</b> 2025-04-19 15:06:34.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/5/data.json</div>`)[0];
+                popup_2a137db664f8499962a02dad6e1bdc13.setContent(html_888b4bc52d913ce683728b7df2cf5108);
+            
+        
+
+        marker_677f433dd37542f69cb433d2bf514916.bindPopup(popup_2a137db664f8499962a02dad6e1bdc13)
+        ;
+
+        
+    
+    
+                marker_677f433dd37542f69cb433d2bf514916.setIcon(icon_8bb8eb8081e9e35f9f7dc09b02442fb0);
+            
+    
+            var marker_2c8d98c5c706ad0a54ddb379860afe0e = L.marker(
+                [24.045672188535374, 55.84805672993497],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_1f22140e43d20f5b6d667056ffb55529 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33f2ac5e047ed01a815182a6875872fe = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_721e3c36a4be7dde9643b37872a3b3fc = $(`<div id="html_721e3c36a4be7dde9643b37872a3b3fc" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 6<br><b>Label:</b> 6<br><b>Time:</b> 2025-04-19 15:08:33.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/6/data.json</div>`)[0];
+                popup_33f2ac5e047ed01a815182a6875872fe.setContent(html_721e3c36a4be7dde9643b37872a3b3fc);
+            
+        
+
+        marker_2c8d98c5c706ad0a54ddb379860afe0e.bindPopup(popup_33f2ac5e047ed01a815182a6875872fe)
+        ;
+
+        
+    
+    
+                marker_2c8d98c5c706ad0a54ddb379860afe0e.setIcon(icon_1f22140e43d20f5b6d667056ffb55529);
+            
+    
+            var marker_3a6304ec3385f6a7b5fda3a14cb0db73 = L.marker(
+                [24.045132272341586, 55.84818412601543],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_a0b57d41e0d372483a61b362e1cea5fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a85d1a35e89d568156ecf7e878769e76 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_712b2fa23919fd54f09d3f87000fbedf = $(`<div id="html_712b2fa23919fd54f09d3f87000fbedf" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 7<br><b>Label:</b> 7<br><b>Time:</b> 2025-04-19 15:09:41.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/7/data.json</div>`)[0];
+                popup_a85d1a35e89d568156ecf7e878769e76.setContent(html_712b2fa23919fd54f09d3f87000fbedf);
+            
+        
+
+        marker_3a6304ec3385f6a7b5fda3a14cb0db73.bindPopup(popup_a85d1a35e89d568156ecf7e878769e76)
+        ;
+
+        
+    
+    
+                marker_3a6304ec3385f6a7b5fda3a14cb0db73.setIcon(icon_a0b57d41e0d372483a61b362e1cea5fe);
+            
+    
+            var marker_01a9a716d4b0d6f4f3ef878c2ef80eba = L.marker(
+                [24.044810466355177, 55.847912317420146],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_37905f6b9ee180c71451bd22109a4767 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64316a29a3f7e55ce8fd4b5d8765e790 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8865e6207a08a95592271a37a5f295c7 = $(`<div id="html_8865e6207a08a95592271a37a5f295c7" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 8<br><b>Label:</b> 8<br><b>Time:</b> 2025-04-19 15:10:42.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/8/data.json</div>`)[0];
+                popup_64316a29a3f7e55ce8fd4b5d8765e790.setContent(html_8865e6207a08a95592271a37a5f295c7);
+            
+        
+
+        marker_01a9a716d4b0d6f4f3ef878c2ef80eba.bindPopup(popup_64316a29a3f7e55ce8fd4b5d8765e790)
+        ;
+
+        
+    
+    
+                marker_01a9a716d4b0d6f4f3ef878c2ef80eba.setIcon(icon_37905f6b9ee180c71451bd22109a4767);
+            
+    
+            var marker_ebd47be1851f3cf4a9095709ff73b912 = L.marker(
+                [24.04491428906914, 55.847144807755896],
+                {
+}
+            ).addTo(feature_group_ac40cd462aef7bf7c5919d301d87db74);
+        
+    
+            var icon_f6519e9f3e7a90dc03d3c7d8caef7917 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f4a0819d938a99c7dae6de3cd689743 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_dc58f46c3602d6c2f4a7ed1159e3b688 = $(`<div id="html_dc58f46c3602d6c2f4a7ed1159e3b688" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 6<br><b>Record:</b> 9<br><b>Label:</b> 9<br><b>Time:</b> 2025-04-19 15:13:43.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/9/data.json</div>`)[0];
+                popup_2f4a0819d938a99c7dae6de3cd689743.setContent(html_dc58f46c3602d6c2f4a7ed1159e3b688);
+            
+        
+
+        marker_ebd47be1851f3cf4a9095709ff73b912.bindPopup(popup_2f4a0819d938a99c7dae6de3cd689743)
+        ;
+
+        
+    
+    
+                marker_ebd47be1851f3cf4a9095709ff73b912.setIcon(icon_f6519e9f3e7a90dc03d3c7d8caef7917);
+            
+    
+            feature_group_ac40cd462aef7bf7c5919d301d87db74.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_f25692fa9d226c19796f2989a45383f1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_91c46d8ffedf697b54ddb3cf91a3417d = L.marker(
+                [24.408096503481993, 54.576266873678726],
+                {
+}
+            ).addTo(feature_group_f25692fa9d226c19796f2989a45383f1);
+        
+    
+            var icon_946c0abd955727a1a7964c8fac30045f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7351377bfa6f48a0af54cebd5139be1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_208f7cf837be588a6cc7dde230ce4e07 = $(`<div id="html_208f7cf837be588a6cc7dde230ce4e07" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 1<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/object_records/1/data.json</div>`)[0];
+                popup_7351377bfa6f48a0af54cebd5139be1b.setContent(html_208f7cf837be588a6cc7dde230ce4e07);
+            
+        
+
+        marker_91c46d8ffedf697b54ddb3cf91a3417d.bindPopup(popup_7351377bfa6f48a0af54cebd5139be1b)
+        ;
+
+        
+    
+    
+                marker_91c46d8ffedf697b54ddb3cf91a3417d.setIcon(icon_946c0abd955727a1a7964c8fac30045f);
+            
+    
+            var marker_11de4c59573d47ad9d3b7b214fc093a7 = L.marker(
+                [24.437621689361222, 54.60991640604572],
+                {
+}
+            ).addTo(feature_group_f25692fa9d226c19796f2989a45383f1);
+        
+    
+            var icon_e908f502c23c31b6999ee3467b20b414 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fda9e23f25320ad98b615dbd4b16c1aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3f2d633994bd3ae12cb2f902defc0e6 = $(`<div id="html_e3f2d633994bd3ae12cb2f902defc0e6" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 4<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/object_records/1/data.json</div>`)[0];
+                popup_fda9e23f25320ad98b615dbd4b16c1aa.setContent(html_e3f2d633994bd3ae12cb2f902defc0e6);
+            
+        
+
+        marker_11de4c59573d47ad9d3b7b214fc093a7.bindPopup(popup_fda9e23f25320ad98b615dbd4b16c1aa)
+        ;
+
+        
+    
+    
+                marker_11de4c59573d47ad9d3b7b214fc093a7.setIcon(icon_e908f502c23c31b6999ee3467b20b414);
+            
+    
+            var marker_d6230c5cd92f8de8ea52deeb0050a0fd = L.marker(
+                [24.045464669945257, 55.847389485839855],
+                {
+}
+            ).addTo(feature_group_f25692fa9d226c19796f2989a45383f1);
+        
+    
+            var icon_a8889f3504821e069709aff9a1eec415 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6047f6d59db6c7d9fd3e2ec48db0b168 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e32883961c7b99c6b601bcd9ea600f8e = $(`<div id="html_e32883961c7b99c6b601bcd9ea600f8e" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 6<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/object_records/1/data.json</div>`)[0];
+                popup_6047f6d59db6c7d9fd3e2ec48db0b168.setContent(html_e32883961c7b99c6b601bcd9ea600f8e);
+            
+        
+
+        marker_d6230c5cd92f8de8ea52deeb0050a0fd.bindPopup(popup_6047f6d59db6c7d9fd3e2ec48db0b168)
+        ;
+
+        
+    
+    
+                marker_d6230c5cd92f8de8ea52deeb0050a0fd.setIcon(icon_a8889f3504821e069709aff9a1eec415);
+            
+    
+            var marker_d951f581059e0da784f0acb845ec50c0 = L.marker(
+                [24.412801307641683, 54.554334785840055],
+                {
+}
+            ).addTo(feature_group_f25692fa9d226c19796f2989a45383f1);
+        
+    
+            var icon_eb6dbc765f221665db4a34fedd584d14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5278371184119b9c3f940c70c1c99035 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55959a0e5993ca0115c73a2ec738ac17 = $(`<div id="html_55959a0e5993ca0115c73a2ec738ac17" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 8<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/object_records/1/data.json</div>`)[0];
+                popup_5278371184119b9c3f940c70c1c99035.setContent(html_55959a0e5993ca0115c73a2ec738ac17);
+            
+        
+
+        marker_d951f581059e0da784f0acb845ec50c0.bindPopup(popup_5278371184119b9c3f940c70c1c99035)
+        ;
+
+        
+    
+    
+                marker_d951f581059e0da784f0acb845ec50c0.setIcon(icon_eb6dbc765f221665db4a34fedd584d14);
+            
+    
+            var marker_4682d99512d2a448143cfcae465e9e98 = L.marker(
+                [24.410694, 54.5705],
+                {
+}
+            ).addTo(feature_group_f25692fa9d226c19796f2989a45383f1);
+        
+    
+            var icon_5bf0bee7d788c169420ac12ee41b7c16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_924fb6fbe481e789613d8e9ce3e715db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95d08216eb558126d8e01ee472b6c57a = $(`<div id="html_95d08216eb558126d8e01ee472b6c57a" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 9<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/object_records/1/data.json</div>`)[0];
+                popup_924fb6fbe481e789613d8e9ce3e715db.setContent(html_95d08216eb558126d8e01ee472b6c57a);
+            
+        
+
+        marker_4682d99512d2a448143cfcae465e9e98.bindPopup(popup_924fb6fbe481e789613d8e9ce3e715db)
+        ;
+
+        
+    
+    
+                marker_4682d99512d2a448143cfcae465e9e98.setIcon(icon_5bf0bee7d788c169420ac12ee41b7c16);
+            
+    
+            feature_group_f25692fa9d226c19796f2989a45383f1.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_25ef762c46e4a893fd6b23f8192cf4d4 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a7d4b9530d24c1317b805d4d6fa0fe61 = L.marker(
+                [24.412632957116486, 54.55499678855254],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_c8c1e6704172704c9637648d6ee964c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dc3ee5565faafe44265fdbef38ebd38 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3ed001cc767c79c2918adf7a953f6662 = $(`<div id="html_3ed001cc767c79c2918adf7a953f6662" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 1<br><b>Label:</b> 1<br><b>Time:</b> 2025-04-23 14:24:57.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/1/data.json</div>`)[0];
+                popup_9dc3ee5565faafe44265fdbef38ebd38.setContent(html_3ed001cc767c79c2918adf7a953f6662);
+            
+        
+
+        marker_a7d4b9530d24c1317b805d4d6fa0fe61.bindPopup(popup_9dc3ee5565faafe44265fdbef38ebd38)
+        ;
+
+        
+    
+    
+                marker_a7d4b9530d24c1317b805d4d6fa0fe61.setIcon(icon_c8c1e6704172704c9637648d6ee964c1);
+            
+    
+            var marker_85827fa734c3b633e91ebb37e45088d0 = L.marker(
+                [24.41427508244724, 54.554758496576206],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_3fea1f41a43a8abfa26be0598357cfb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6b97bb310acfcacdbc332fa9ce2b3df = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1564352c8b11588eb69930119e0dbfe6 = $(`<div id="html_1564352c8b11588eb69930119e0dbfe6" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 10<br><b>Label:</b> 10<br><b>Time:</b> 2025-04-23 14:39:46.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/10/data.json</div>`)[0];
+                popup_d6b97bb310acfcacdbc332fa9ce2b3df.setContent(html_1564352c8b11588eb69930119e0dbfe6);
+            
+        
+
+        marker_85827fa734c3b633e91ebb37e45088d0.bindPopup(popup_d6b97bb310acfcacdbc332fa9ce2b3df)
+        ;
+
+        
+    
+    
+                marker_85827fa734c3b633e91ebb37e45088d0.setIcon(icon_3fea1f41a43a8abfa26be0598357cfb0);
+            
+    
+            var marker_950e38f1e030ec902892f19864dea299 = L.marker(
+                [24.41374592972053, 54.55474424886597],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_ef91d706770ac409e758d448a8148083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38e60db81273e4dbda8b7eca6f04ca67 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c78078e58e27269c6916de06aebab450 = $(`<div id="html_c78078e58e27269c6916de06aebab450" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 3<br><b>Label:</b> 3<br><b>Time:</b> 2025-04-23 14:27:02.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/3/data.json</div>`)[0];
+                popup_38e60db81273e4dbda8b7eca6f04ca67.setContent(html_c78078e58e27269c6916de06aebab450);
+            
+        
+
+        marker_950e38f1e030ec902892f19864dea299.bindPopup(popup_38e60db81273e4dbda8b7eca6f04ca67)
+        ;
+
+        
+    
+    
+                marker_950e38f1e030ec902892f19864dea299.setIcon(icon_ef91d706770ac409e758d448a8148083);
+            
+    
+            var marker_67b5c1b0bd7bbd85794abb4ba7574d3a = L.marker(
+                [24.412394774179692, 54.553684075764146],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_b91d8724a1383bd1a04a32191be9a1bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8aa663c7c2aadfb2151008079de003a5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8dfb01793dc4ee64334e71126fe0859f = $(`<div id="html_8dfb01793dc4ee64334e71126fe0859f" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 4<br><b>Label:</b> 4<br><b>Time:</b> 2025-04-23 14:32:09.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/4/data.json</div>`)[0];
+                popup_8aa663c7c2aadfb2151008079de003a5.setContent(html_8dfb01793dc4ee64334e71126fe0859f);
+            
+        
+
+        marker_67b5c1b0bd7bbd85794abb4ba7574d3a.bindPopup(popup_8aa663c7c2aadfb2151008079de003a5)
+        ;
+
+        
+    
+    
+                marker_67b5c1b0bd7bbd85794abb4ba7574d3a.setIcon(icon_b91d8724a1383bd1a04a32191be9a1bc);
+            
+    
+            var marker_b14587787c14b16e8ed2994c27d166d2 = L.marker(
+                [24.41219358124852, 54.55327017122389],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_c3b2719d1221c01c27088482118435ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6b9ccae024627c31ad8906a495bc158 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_86da303dbda3e88893610f094e34e914 = $(`<div id="html_86da303dbda3e88893610f094e34e914" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 5<br><b>Label:</b> 5<br><b>Time:</b> 2025-04-23 14:32:57.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/5/data.json</div>`)[0];
+                popup_c6b9ccae024627c31ad8906a495bc158.setContent(html_86da303dbda3e88893610f094e34e914);
+            
+        
+
+        marker_b14587787c14b16e8ed2994c27d166d2.bindPopup(popup_c6b9ccae024627c31ad8906a495bc158)
+        ;
+
+        
+    
+    
+                marker_b14587787c14b16e8ed2994c27d166d2.setIcon(icon_c3b2719d1221c01c27088482118435ec);
+            
+    
+            var marker_de6922248cced47f07d129b18f967c04 = L.marker(
+                [24.41254870279624, 54.552994828163285],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_c7444a3cb762bc70343cde4031efb538 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21d5df9459237fa234c889a411fb8177 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e43b1944872cc4ffd5637f493d91a45b = $(`<div id="html_e43b1944872cc4ffd5637f493d91a45b" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 6<br><b>Label:</b> 6<br><b>Time:</b> 2025-04-23 14:33:51.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/6/data.json</div>`)[0];
+                popup_21d5df9459237fa234c889a411fb8177.setContent(html_e43b1944872cc4ffd5637f493d91a45b);
+            
+        
+
+        marker_de6922248cced47f07d129b18f967c04.bindPopup(popup_21d5df9459237fa234c889a411fb8177)
+        ;
+
+        
+    
+    
+                marker_de6922248cced47f07d129b18f967c04.setIcon(icon_c7444a3cb762bc70343cde4031efb538);
+            
+    
+            var marker_19f885a18f72d87e794467da1f3eb57e = L.marker(
+                [24.412950880343274, 54.552817174517436],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_b49e10307690f5d12b650e351998a4c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_222a88d7dfa73ecb80ecef95ba46c73a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_21d0df36a98f97038f9fbdd6ad79b74b = $(`<div id="html_21d0df36a98f97038f9fbdd6ad79b74b" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 7<br><b>Label:</b> 7<br><b>Time:</b> 2025-04-23 14:34:39.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/7/data.json</div>`)[0];
+                popup_222a88d7dfa73ecb80ecef95ba46c73a.setContent(html_21d0df36a98f97038f9fbdd6ad79b74b);
+            
+        
+
+        marker_19f885a18f72d87e794467da1f3eb57e.bindPopup(popup_222a88d7dfa73ecb80ecef95ba46c73a)
+        ;
+
+        
+    
+    
+                marker_19f885a18f72d87e794467da1f3eb57e.setIcon(icon_b49e10307690f5d12b650e351998a4c3);
+            
+    
+            var marker_c3ad5dfbc70bb57366ea000f883ac1de = L.marker(
+                [24.413157723140205, 54.5533775080714],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_e2e27630d76bd7e4a514b6f256cf6fed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a03abc5711680a4ae256b30c30cb705 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c027c213691a2d62b6f93980145ef30d = $(`<div id="html_c027c213691a2d62b6f93980145ef30d" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 8<br><b>Label:</b> 8<br><b>Time:</b> 2025-04-23 14:35:45.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/8/data.json</div>`)[0];
+                popup_0a03abc5711680a4ae256b30c30cb705.setContent(html_c027c213691a2d62b6f93980145ef30d);
+            
+        
+
+        marker_c3ad5dfbc70bb57366ea000f883ac1de.bindPopup(popup_0a03abc5711680a4ae256b30c30cb705)
+        ;
+
+        
+    
+    
+                marker_c3ad5dfbc70bb57366ea000f883ac1de.setIcon(icon_e2e27630d76bd7e4a514b6f256cf6fed);
+            
+    
+            var marker_f5369392a05d6deb5196fa4b2d0a49bd = L.marker(
+                [24.413939717486848, 54.55331996276052],
+                {
+}
+            ).addTo(feature_group_25ef762c46e4a893fd6b23f8192cf4d4);
+        
+    
+            var icon_ceae902e70e57d8a4f587fe76bb4dbd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00d4d374e03c39d80e0fd65fe951d8b8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a2a1a482772a55d454bbca04c646e3fc = $(`<div id="html_a2a1a482772a55d454bbca04c646e3fc" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 8<br><b>Record:</b> 9<br><b>Label:</b> 9<br><b>Time:</b> 2025-04-23 14:37:27.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/9/data.json</div>`)[0];
+                popup_00d4d374e03c39d80e0fd65fe951d8b8.setContent(html_a2a1a482772a55d454bbca04c646e3fc);
+            
+        
+
+        marker_f5369392a05d6deb5196fa4b2d0a49bd.bindPopup(popup_00d4d374e03c39d80e0fd65fe951d8b8)
+        ;
+
+        
+    
+    
+                marker_f5369392a05d6deb5196fa4b2d0a49bd.setIcon(icon_ceae902e70e57d8a4f587fe76bb4dbd3);
+            
+    
+            feature_group_25ef762c46e4a893fd6b23f8192cf4d4.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_e681362669980f88114140543f85d04b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_8313ebe67c3b8ccf1871a6539a591d2b = L.marker(
+                [24.408096503481993, 54.576266873678726],
+                {
+}
+            ).addTo(feature_group_e681362669980f88114140543f85d04b);
+        
+    
+            var icon_36514ef715f29b6dbdfe7d5009017be9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4df9a04c142b7ec050d699f2ef113c0c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48dd0c12ee8fe57bf9bf1decccb9770b = $(`<div id="html_48dd0c12ee8fe57bf9bf1decccb9770b" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 1<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/object_records/1/data.json</div>`)[0];
+                popup_4df9a04c142b7ec050d699f2ef113c0c.setContent(html_48dd0c12ee8fe57bf9bf1decccb9770b);
+            
+        
+
+        marker_8313ebe67c3b8ccf1871a6539a591d2b.bindPopup(popup_4df9a04c142b7ec050d699f2ef113c0c)
+        ;
+
+        
+    
+    
+                marker_8313ebe67c3b8ccf1871a6539a591d2b.setIcon(icon_36514ef715f29b6dbdfe7d5009017be9);
+            
+    
+            var marker_908a73a1f6614dbe8b980f726743dc8e = L.marker(
+                [24.437621689361222, 54.60991640604572],
+                {
+}
+            ).addTo(feature_group_e681362669980f88114140543f85d04b);
+        
+    
+            var icon_9c1ec9a15d8e5f3874e0a2f42735334e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8eed1a54c55f424dedb11bf1b67f782 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5ab13b2898a6a8b9dcbc4b1137328bf = $(`<div id="html_c5ab13b2898a6a8b9dcbc4b1137328bf" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 4<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/object_records/1/data.json</div>`)[0];
+                popup_e8eed1a54c55f424dedb11bf1b67f782.setContent(html_c5ab13b2898a6a8b9dcbc4b1137328bf);
+            
+        
+
+        marker_908a73a1f6614dbe8b980f726743dc8e.bindPopup(popup_e8eed1a54c55f424dedb11bf1b67f782)
+        ;
+
+        
+    
+    
+                marker_908a73a1f6614dbe8b980f726743dc8e.setIcon(icon_9c1ec9a15d8e5f3874e0a2f42735334e);
+            
+    
+            var marker_71b51729c04528117a307b7c855cf183 = L.marker(
+                [24.045464669945257, 55.847389485839855],
+                {
+}
+            ).addTo(feature_group_e681362669980f88114140543f85d04b);
+        
+    
+            var icon_dba4b7fc1444c38d824ce86bb5405ba5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_825f0830cf769b3ca7ec96229ee04968 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c6b8a3cc20ce458a9fb093dfe7e9c1b = $(`<div id="html_5c6b8a3cc20ce458a9fb093dfe7e9c1b" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 6<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/object_records/1/data.json</div>`)[0];
+                popup_825f0830cf769b3ca7ec96229ee04968.setContent(html_5c6b8a3cc20ce458a9fb093dfe7e9c1b);
+            
+        
+
+        marker_71b51729c04528117a307b7c855cf183.bindPopup(popup_825f0830cf769b3ca7ec96229ee04968)
+        ;
+
+        
+    
+    
+                marker_71b51729c04528117a307b7c855cf183.setIcon(icon_dba4b7fc1444c38d824ce86bb5405ba5);
+            
+    
+            var marker_50bf54714fd13e20eaa250eef481cabc = L.marker(
+                [24.412801307641683, 54.554334785840055],
+                {
+}
+            ).addTo(feature_group_e681362669980f88114140543f85d04b);
+        
+    
+            var icon_e71a5077b95a017a4b292de7465a9228 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1e2238b86b0a586f0c53c8c915a8a35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1daa3c18d893cf39c7fc318be0f72fb8 = $(`<div id="html_1daa3c18d893cf39c7fc318be0f72fb8" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 8<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/object_records/1/data.json</div>`)[0];
+                popup_c1e2238b86b0a586f0c53c8c915a8a35.setContent(html_1daa3c18d893cf39c7fc318be0f72fb8);
+            
+        
+
+        marker_50bf54714fd13e20eaa250eef481cabc.bindPopup(popup_c1e2238b86b0a586f0c53c8c915a8a35)
+        ;
+
+        
+    
+    
+                marker_50bf54714fd13e20eaa250eef481cabc.setIcon(icon_e71a5077b95a017a4b292de7465a9228);
+            
+    
+            var marker_688ec46d3b34d4430aa4ab5719596c8c = L.marker(
+                [24.410694, 54.5705],
+                {
+}
+            ).addTo(feature_group_e681362669980f88114140543f85d04b);
+        
+    
+            var icon_5fd1ce3357640b6d64ad993e1abe327c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_959f1da54dde38aac2ed0642b2e93071 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_941abc06cb11fe326fd4847bae5ac8c5 = $(`<div id="html_941abc06cb11fe326fd4847bae5ac8c5" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 9<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/object_records/1/data.json</div>`)[0];
+                popup_959f1da54dde38aac2ed0642b2e93071.setContent(html_941abc06cb11fe326fd4847bae5ac8c5);
+            
+        
+
+        marker_688ec46d3b34d4430aa4ab5719596c8c.bindPopup(popup_959f1da54dde38aac2ed0642b2e93071)
+        ;
+
+        
+    
+    
+                marker_688ec46d3b34d4430aa4ab5719596c8c.setIcon(icon_5fd1ce3357640b6d64ad993e1abe327c);
+            
+    
+            feature_group_e681362669980f88114140543f85d04b.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_969ef270725030364771f98ab423acc1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_aa143e94c4b4f1d398b4b25e96cc17ba = L.marker(
+                [24.41326830538401, 54.57244464201347],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_b777cc3f175bac69275773b3da3967fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bffca1694db97b2f7c73c76204fe4059 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a3c7ada414717115fdb9357a2baaec9b = $(`<div id="html_a3c7ada414717115fdb9357a2baaec9b" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 1<br><b>Label:</b> 1<br><b>Time:</b> 2025-04-23 14:54:11.002Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/1/data.json</div>`)[0];
+                popup_bffca1694db97b2f7c73c76204fe4059.setContent(html_a3c7ada414717115fdb9357a2baaec9b);
+            
+        
+
+        marker_aa143e94c4b4f1d398b4b25e96cc17ba.bindPopup(popup_bffca1694db97b2f7c73c76204fe4059)
+        ;
+
+        
+    
+    
+                marker_aa143e94c4b4f1d398b4b25e96cc17ba.setIcon(icon_b777cc3f175bac69275773b3da3967fe);
+            
+    
+            var marker_8476a7393036373649ff563650a7b191 = L.marker(
+                [24.412244707368696, 54.57279475410895],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_ec000ba6c33e6835fb631cf4fa13a631 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bb8b0cd24a00235cb1e43c2f52fd5cb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_23a701af4eb38c22eebd60280441904f = $(`<div id="html_23a701af4eb38c22eebd60280441904f" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 2<br><b>Label:</b> 2<br><b>Time:</b> 2025-04-23 14:55:28.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/2/data.json</div>`)[0];
+                popup_6bb8b0cd24a00235cb1e43c2f52fd5cb.setContent(html_23a701af4eb38c22eebd60280441904f);
+            
+        
+
+        marker_8476a7393036373649ff563650a7b191.bindPopup(popup_6bb8b0cd24a00235cb1e43c2f52fd5cb)
+        ;
+
+        
+    
+    
+                marker_8476a7393036373649ff563650a7b191.setIcon(icon_ec000ba6c33e6835fb631cf4fa13a631);
+            
+    
+            var marker_d71cf38c8bf34e65d8297dad42ce5933 = L.marker(
+                [24.413711797671052, 54.571575563148066],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_ad6d9827d7d3c63544b8eae2a94b0b85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f588650b4c2eb5341a3b803ee95a064 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_56cbd3754b1f4dfd274d854a0338d0ad = $(`<div id="html_56cbd3754b1f4dfd274d854a0338d0ad" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 3<br><b>Label:</b> 3<br><b>Time:</b> 2025-04-23 14:56:36.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/3/data.json</div>`)[0];
+                popup_5f588650b4c2eb5341a3b803ee95a064.setContent(html_56cbd3754b1f4dfd274d854a0338d0ad);
+            
+        
+
+        marker_d71cf38c8bf34e65d8297dad42ce5933.bindPopup(popup_5f588650b4c2eb5341a3b803ee95a064)
+        ;
+
+        
+    
+    
+                marker_d71cf38c8bf34e65d8297dad42ce5933.setIcon(icon_ad6d9827d7d3c63544b8eae2a94b0b85);
+            
+    
+            var marker_848524b9530449b495695ab66aa68d81 = L.marker(
+                [24.413635348916774, 54.572781426882905],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_fe7895743d71a6ee5389cbc5afb282d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f5d0d14b80da8c197128f8ea7ad6321 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_324f45d4a9a7d20fc6dfd73cb6f15bf6 = $(`<div id="html_324f45d4a9a7d20fc6dfd73cb6f15bf6" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 4<br><b>Label:</b> 4<br><b>Time:</b> 2025-04-23 14:59:00.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/4/data.json</div>`)[0];
+                popup_5f5d0d14b80da8c197128f8ea7ad6321.setContent(html_324f45d4a9a7d20fc6dfd73cb6f15bf6);
+            
+        
+
+        marker_848524b9530449b495695ab66aa68d81.bindPopup(popup_5f5d0d14b80da8c197128f8ea7ad6321)
+        ;
+
+        
+    
+    
+                marker_848524b9530449b495695ab66aa68d81.setIcon(icon_fe7895743d71a6ee5389cbc5afb282d9);
+            
+    
+            var marker_a2866f7f7bfa9e39cf2ab84c72fa02e5 = L.marker(
+                [24.410846061095977, 54.57177786161618],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_c9525a925710ea6570026dd285ca6b3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_332556d65ec03479ce23d9af7ffdd1f8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_97fd1db7316fac801b81552b7d7ee632 = $(`<div id="html_97fd1db7316fac801b81552b7d7ee632" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 5<br><b>Label:</b> 5<br><b>Time:</b> 2025-04-23 15:01:00.999Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/5/data.json</div>`)[0];
+                popup_332556d65ec03479ce23d9af7ffdd1f8.setContent(html_97fd1db7316fac801b81552b7d7ee632);
+            
+        
+
+        marker_a2866f7f7bfa9e39cf2ab84c72fa02e5.bindPopup(popup_332556d65ec03479ce23d9af7ffdd1f8)
+        ;
+
+        
+    
+    
+                marker_a2866f7f7bfa9e39cf2ab84c72fa02e5.setIcon(icon_c9525a925710ea6570026dd285ca6b3e);
+            
+    
+            var marker_0acef12314501b79d07f063e0cea9e86 = L.marker(
+                [24.411534047701178, 54.57370469351726],
+                {
+}
+            ).addTo(feature_group_969ef270725030364771f98ab423acc1);
+        
+    
+            var icon_7dd2977dad0eae7dd4533544398d49c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a8789705f72638f6d295710f917cd9a = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6a39c1af2f477cb1472bb3f32169ed79 = $(`<div id="html_6a39c1af2f477cb1472bb3f32169ed79" style="width: 100.0%; height: 100.0%;"><b>Session:</b> 9<br><b>Record:</b> 6<br><b>Label:</b> 6<br><b>Time:</b> 2025-04-23 15:02:58.000Z<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/6/data.json</div>`)[0];
+                popup_7a8789705f72638f6d295710f917cd9a.setContent(html_6a39c1af2f477cb1472bb3f32169ed79);
+            
+        
+
+        marker_0acef12314501b79d07f063e0cea9e86.bindPopup(popup_7a8789705f72638f6d295710f917cd9a)
+        ;
+
+        
+    
+    
+                marker_0acef12314501b79d07f063e0cea9e86.setIcon(icon_7dd2977dad0eae7dd4533544398d49c7);
+            
+    
+            feature_group_969ef270725030364771f98ab423acc1.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var feature_group_9aed74bce965e7ee5e971ec9231e4750 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0d8d114142c15d1db108f54b27ad1731 = L.marker(
+                [24.408096503481993, 54.576266873678726],
+                {
+}
+            ).addTo(feature_group_9aed74bce965e7ee5e971ec9231e4750);
+        
+    
+            var icon_18112281296f9be009cd1bd9ac1d8efb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80b112775ea884cf15b397a683ad109e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a39ba32e994aaf85ca7556866545fe8f = $(`<div id="html_a39ba32e994aaf85ca7556866545fe8f" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 1<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/object_records/1/data.json</div>`)[0];
+                popup_80b112775ea884cf15b397a683ad109e.setContent(html_a39ba32e994aaf85ca7556866545fe8f);
+            
+        
+
+        marker_0d8d114142c15d1db108f54b27ad1731.bindPopup(popup_80b112775ea884cf15b397a683ad109e)
+        ;
+
+        
+    
+    
+                marker_0d8d114142c15d1db108f54b27ad1731.setIcon(icon_18112281296f9be009cd1bd9ac1d8efb);
+            
+    
+            var marker_b8cf4b1d57ebbbf138270f60b57e1577 = L.marker(
+                [24.437621689361222, 54.60991640604572],
+                {
+}
+            ).addTo(feature_group_9aed74bce965e7ee5e971ec9231e4750);
+        
+    
+            var icon_6bc8a49aa71ff4bd2a23bf258fe1204f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2f3af2d0f1395da4d94d12e602e1b30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e53ebc1d675d1142eb7257f31de44ab7 = $(`<div id="html_e53ebc1d675d1142eb7257f31de44ab7" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 4<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/object_records/1/data.json</div>`)[0];
+                popup_e2f3af2d0f1395da4d94d12e602e1b30.setContent(html_e53ebc1d675d1142eb7257f31de44ab7);
+            
+        
+
+        marker_b8cf4b1d57ebbbf138270f60b57e1577.bindPopup(popup_e2f3af2d0f1395da4d94d12e602e1b30)
+        ;
+
+        
+    
+    
+                marker_b8cf4b1d57ebbbf138270f60b57e1577.setIcon(icon_6bc8a49aa71ff4bd2a23bf258fe1204f);
+            
+    
+            var marker_d0db82a6ed7c0c69cc3d0e4ac02bb6bf = L.marker(
+                [24.045464669945257, 55.847389485839855],
+                {
+}
+            ).addTo(feature_group_9aed74bce965e7ee5e971ec9231e4750);
+        
+    
+            var icon_66fc2cb10cf766d59be3f79e285d35d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83a6d972e3a97ac2e98e6ec51ce4c16c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_945e8983e78acbd16dd51856620ef2ac = $(`<div id="html_945e8983e78acbd16dd51856620ef2ac" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 6<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/object_records/1/data.json</div>`)[0];
+                popup_83a6d972e3a97ac2e98e6ec51ce4c16c.setContent(html_945e8983e78acbd16dd51856620ef2ac);
+            
+        
+
+        marker_d0db82a6ed7c0c69cc3d0e4ac02bb6bf.bindPopup(popup_83a6d972e3a97ac2e98e6ec51ce4c16c)
+        ;
+
+        
+    
+    
+                marker_d0db82a6ed7c0c69cc3d0e4ac02bb6bf.setIcon(icon_66fc2cb10cf766d59be3f79e285d35d3);
+            
+    
+            var marker_df5f93b94915c832bad69dfaf04809c9 = L.marker(
+                [24.412801307641683, 54.554334785840055],
+                {
+}
+            ).addTo(feature_group_9aed74bce965e7ee5e971ec9231e4750);
+        
+    
+            var icon_ffb63654bb139f3dc6a4ae1b66ce0137 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_684f62fff2f5f80a56a39292207523e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d9f6a419d9827469038edc51c98182e = $(`<div id="html_7d9f6a419d9827469038edc51c98182e" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 8<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/object_records/1/data.json</div>`)[0];
+                popup_684f62fff2f5f80a56a39292207523e3.setContent(html_7d9f6a419d9827469038edc51c98182e);
+            
+        
+
+        marker_df5f93b94915c832bad69dfaf04809c9.bindPopup(popup_684f62fff2f5f80a56a39292207523e3)
+        ;
+
+        
+    
+    
+                marker_df5f93b94915c832bad69dfaf04809c9.setIcon(icon_ffb63654bb139f3dc6a4ae1b66ce0137);
+            
+    
+            var marker_8e9539586df1ca902d045d05515bf7ed = L.marker(
+                [24.410694, 54.5705],
+                {
+}
+            ).addTo(feature_group_9aed74bce965e7ee5e971ec9231e4750);
+        
+    
+            var icon_b8af4eebd0c82118c290670c726da1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a3fa68c9d32e095a4eb3e87157fb29c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35a3ae55bd7f99d398f7c32cd88b40c8 = $(`<div id="html_35a3ae55bd7f99d398f7c32cd88b40c8" style="width: 100.0%; height: 100.0%;"><b>OBJECT</b><br><b>Session:</b> 9<br><b>Source:</b> /Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/object_records/1/data.json</div>`)[0];
+                popup_7a3fa68c9d32e095a4eb3e87157fb29c.setContent(html_35a3ae55bd7f99d398f7c32cd88b40c8);
+            
+        
+
+        marker_8e9539586df1ca902d045d05515bf7ed.bindPopup(popup_7a3fa68c9d32e095a4eb3e87157fb29c)
+        ;
+
+        
+    
+    
+                marker_8e9539586df1ca902d045d05515bf7ed.setIcon(icon_b8af4eebd0c82118c290670c726da1f2);
+            
+    
+            feature_group_9aed74bce965e7ee5e971ec9231e4750.addTo(map_49dde353bc3172f021b2bcca521008b2);
+        
+    
+            var layer_control_d2b8f413aa3d99d136c08efe19cd423c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_355b00d5fdb440a62fc3fc2f7cb13b20,
+                },
+                overlays :  {
+                    "Session 1" : feature_group_5c59bfa0aeba679df9cbe1a7ee6893d7,
+                    "Objects" : feature_group_9aed74bce965e7ee5e971ec9231e4750,
+                    "Session 4" : feature_group_bd104e859109eb9f29dd0d278fb081bc,
+                    "Session 6" : feature_group_ac40cd462aef7bf7c5919d301d87db74,
+                    "Session 8" : feature_group_25ef762c46e4a893fd6b23f8192cf4d4,
+                    "Session 9" : feature_group_969ef270725030364771f98ab423acc1,
+                },
+            };
+            let layer_control_d2b8f413aa3d99d136c08efe19cd423c = L.control.layers(
+                layer_control_d2b8f413aa3d99d136c08efe19cd423c_layers.base_layers,
+                layer_control_d2b8f413aa3d99d136c08efe19cd423c_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_49dde353bc3172f021b2bcca521008b2);
+
+        
+</script>
+</html>

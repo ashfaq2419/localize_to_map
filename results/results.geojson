@@ -1,0 +1,689 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57656359579732,
+          24.40744241425124
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "1",
+        "label": "1",
+        "timestamp": "2025-04-15 13:48:29.998Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/1/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.577431755536935,
+          24.409150859922995
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "10",
+        "label": "10",
+        "timestamp": "2025-04-15 13:59:57.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/10/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57627416593448,
+          24.408126468785824
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "11",
+        "label": "11",
+        "timestamp": "2025-04-15 14:03:26.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/11/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.576180372437996,
+          24.40721342808046
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "2",
+        "label": "2",
+        "timestamp": "2025-04-15 13:49:27.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/2/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.5755741093816,
+          24.407108193286142
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "3",
+        "label": "3",
+        "timestamp": "2025-04-15 13:50:42.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/3/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57495313139523,
+          24.40751310935781
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "5",
+        "label": "5",
+        "timestamp": "2025-04-15 13:53:01.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/5/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.574703265325034,
+          24.408085240367516
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "6",
+        "label": "6",
+        "timestamp": "2025-04-15 13:54:15.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/6/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.575440082749886,
+          24.40866747872604
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "7",
+        "label": "7",
+        "timestamp": "2025-04-15 13:56:01.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/7/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57584453560165,
+          24.40885603750707
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "8",
+        "label": "8",
+        "timestamp": "2025-04-15 13:56:50.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/8/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57666197087404,
+          24.409061895921464
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "1",
+        "record": "9",
+        "label": "9",
+        "timestamp": "2025-04-15 13:58:30.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/1/observation_records/9/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.61617032355628,
+          24.439073939188976
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "1",
+        "label": "1",
+        "timestamp": "2025-04-18 13:58:08.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/1/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.61364927843434,
+          24.434962991360507
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "10",
+        "label": "10",
+        "timestamp": "2025-04-19 11:08:01.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/10/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.61075354586979,
+          24.439227513472133
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "3",
+        "label": "3",
+        "timestamp": "2025-04-19 10:47:07.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/3/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.60890366747563,
+          24.439830871024366
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "4",
+        "label": "4",
+        "timestamp": "2025-04-19 10:48:45.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/4/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.60619661000922,
+          24.436636175534094
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "6",
+        "label": "6",
+        "timestamp": "2025-04-19 10:50:46.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/6/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.611496557792194,
+          24.438112145173392
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "4",
+        "record": "8",
+        "label": "8",
+        "timestamp": "2025-04-19 10:54:43.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/4/observation_records/8/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.84662711253003,
+          24.044916015133968
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "1",
+        "label": "1",
+        "timestamp": "2025-04-19 15:02:26.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/1/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.84697448898425,
+          24.04588458777111
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "4",
+        "label": "4",
+        "timestamp": "2025-04-19 15:05:28.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/4/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.84754523992256,
+          24.046043406687843
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "5",
+        "label": "5",
+        "timestamp": "2025-04-19 15:06:34.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/5/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.84805672993497,
+          24.045672188535374
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "6",
+        "label": "6",
+        "timestamp": "2025-04-19 15:08:33.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/6/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.84818412601543,
+          24.045132272341586
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "7",
+        "label": "7",
+        "timestamp": "2025-04-19 15:09:41.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/7/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.847912317420146,
+          24.044810466355177
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "8",
+        "label": "8",
+        "timestamp": "2025-04-19 15:10:42.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/8/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.847144807755896,
+          24.04491428906914
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "6",
+        "record": "9",
+        "label": "9",
+        "timestamp": "2025-04-19 15:13:43.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/6/observation_records/9/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.55499678855254,
+          24.412632957116486
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "1",
+        "label": "1",
+        "timestamp": "2025-04-23 14:24:57.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/1/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.554758496576206,
+          24.41427508244724
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "10",
+        "label": "10",
+        "timestamp": "2025-04-23 14:39:46.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/10/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.55474424886597,
+          24.41374592972053
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "3",
+        "label": "3",
+        "timestamp": "2025-04-23 14:27:02.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/3/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.553684075764146,
+          24.412394774179692
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "4",
+        "label": "4",
+        "timestamp": "2025-04-23 14:32:09.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/4/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.55327017122389,
+          24.41219358124852
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "5",
+        "label": "5",
+        "timestamp": "2025-04-23 14:32:57.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/5/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.552994828163285,
+          24.41254870279624
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "6",
+        "label": "6",
+        "timestamp": "2025-04-23 14:33:51.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/6/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.552817174517436,
+          24.412950880343274
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "7",
+        "label": "7",
+        "timestamp": "2025-04-23 14:34:39.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/7/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.5533775080714,
+          24.413157723140205
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "8",
+        "label": "8",
+        "timestamp": "2025-04-23 14:35:45.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/8/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.55331996276052,
+          24.413939717486848
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "8",
+        "record": "9",
+        "label": "9",
+        "timestamp": "2025-04-23 14:37:27.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/8/observation_records/9/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57244464201347,
+          24.41326830538401
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "1",
+        "label": "1",
+        "timestamp": "2025-04-23 14:54:11.002Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/1/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57279475410895,
+          24.412244707368696
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "2",
+        "label": "2",
+        "timestamp": "2025-04-23 14:55:28.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/2/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.571575563148066,
+          24.413711797671052
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "3",
+        "label": "3",
+        "timestamp": "2025-04-23 14:56:36.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/3/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.572781426882905,
+          24.413635348916774
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "4",
+        "label": "4",
+        "timestamp": "2025-04-23 14:59:00.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/4/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57177786161618,
+          24.410846061095977
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "5",
+        "label": "5",
+        "timestamp": "2025-04-23 15:01:00.999Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/5/data.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.57370469351726,
+          24.411534047701178
+        ]
+      },
+      "properties": {
+        "type": "observer",
+        "session": "9",
+        "record": "6",
+        "label": "6",
+        "timestamp": "2025-04-23 15:02:58.000Z",
+        "source": "/Users/ashfaq2419gmail.com/Desktop/localize_to_map/dataset_sdp/9/observation_records/6/data.json"
+      }
+    }
+  ]
+}

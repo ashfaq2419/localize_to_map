@@ -1,0 +1,23 @@
+{
+    "timestamp": "2025-04-15T17:48:18.353213",
+    "manual_object_elevation": 36,
+    "gps": {
+        "latitude": 24.408096503481993,
+        "longitude": 54.576266873678726,
+        "accuracy": 4.748651530191761,
+        "altitude": 12.175349531695247,
+        "speed": 0.0,
+        "heading": -1.0,
+        "gps_timestamp": "2025-04-15 13:42:50.998Z"
+    },
+    "compass": {
+        "heading": 264.5132141113281,
+        "accuracy": 17.6800537109375
+    },
+    "gyro": {
+        "roll": 1.9702387222578035,
+        "pitch": 169.8872912214367,
+        "yaw_magnetic_north": 82.39731635183038,
+        "yaw_geo_north": 84.67199505456911
+    }
+}
