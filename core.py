@@ -8,6 +8,56 @@ from geopy.distance import geodesic
 
 EARTH_RADIUS = 6371000  # meters
 
+import base64
+from html import escape
+
+def _first_photo_for(json_path: Path) -> Optional[Path]:
+    """Return a photo path next to data.json (photo.jpg/jpeg/png), if it exists."""
+    if not json_path or not json_path.exists():
+        return None
+    folder = json_path.parent
+    for name in ("photo.jpg", "photo.jpeg", "photo.png"):
+        p = folder / name
+        if p.exists():
+            return p
+    return None
+
+def _make_popup_html(js: Dict, photo_path: Optional[Path], width_px: int = 240) -> str:
+    """Build an HTML snippet with (optional) embedded image + a small metadata table."""
+    parts = []
+    # Image (embedded as base64 so it works inside Streamlit/Folium)
+    if photo_path and photo_path.exists():
+        try:
+            data = photo_path.read_bytes()
+            b64 = base64.b64encode(data).decode("ascii")
+            ext = photo_path.suffix.lower().lstrip(".") or "jpeg"
+            parts.append(f'<img src="data:image/{ext};base64,{b64}" width="{width_px}">')
+        except Exception:
+            pass
+
+    # Metadata
+    gps = js.get("gps", {}) or {}
+    comp = js.get("compass", {}) or {}
+    gyro = js.get("gyro", {}) or {}
+    rows = []
+    def row(label, value):
+        if value is None:
+            value = "—"
+        rows.append(f"<tr><td><b>{escape(label)}</b></td><td>{escape(str(value))}</td></tr>")
+    row("timestamp", js.get("timestamp"))
+    row("lat", gps.get("latitude"))
+    row("lon", gps.get("longitude"))
+    row("alt", gps.get("altitude"))
+    row("gps_acc(m)", gps.get("accuracy"))
+    row("heading", comp.get("heading"))
+    row("yaw_geo", gyro.get("yaw_geo_north"))
+    row("yaw_mag", gyro.get("yaw_magnetic_north"))
+    row("pitch", gyro.get("pitch"))
+    html_tbl = "<table style='font-size:12px; margin-top:6px;'>" + "".join(rows) + "</table>"
+    parts.append(html_tbl)
+    return "<div>" + "".join(parts) + "</div>"
+
+
 def compute_bounds(lat_lon_list: List[Tuple[float, float]], margin_m=30):
     min_lat = min(lat for lat, _ in lat_lon_list)
     max_lat = max(lat for lat, _ in lat_lon_list)
@@ -83,8 +133,8 @@ def run_localization_for_case(
     extras: Dict
 ) -> Optional[Tuple[float, float, Optional[float], Dict]]:
     """
-    Bearing-only triangulation to mirror the MATLAB approach:
-      1) WGS84 -> local ENU around first observer (meters)
+    Bearing-only triangulation:
+      1) local ENU around first observer (meters)
       2) Build unit direction vectors from yaw (clockwise from true north)
       3) For all pairs (i,j), intersect rays and collect candidates
       4) Robust estimate: median of candidate x,y
@@ -240,6 +290,8 @@ def build_map_for_root(
     phone_icon_path: Optional[Path] = None,
     object_id: str = "1",
     only_cases: Optional[List[str]] = None,
+    enable_popups: bool = False,           # NEW
+    popup_image_width_px: int = 240        # NEW
 ) -> folium.Map | tuple[folium.Map, List[Dict]]:
     """
     Loops all cases (folders) under root (or a filtered subset), runs localization per case,
@@ -247,8 +299,8 @@ def build_map_for_root(
       - observers (blue phone pins)
       - UAV actual (red label)
       - UAV estimated (orange label)
-    Returns:
-      (map, metrics) where metrics is a list of dicts per case, including error_m if available.
+    If enable_popups=True, markers show image+metadata popups built from the JSON files.
+    Returns: (map, metrics)
     """
     center: Optional[Tuple[float, float]] = None
     overall_bounds_pts: List[Tuple[float, float]] = []
@@ -271,47 +323,84 @@ def build_map_for_root(
         if not observers and not uav:
             continue
 
-        # ----- Observers -----
+        # ---------- Observers ----------
         for idx, lat, lon, alt, js in observers:
             if center is None:
                 center = (lat, lon)
             overall_bounds_pts.append((lat, lon))
+
+            # Build popup/tooltip for this observer (if requested)
+            obs_popup = None
+            obs_tooltip = folium.Tooltip(f"Observer {case_folder}-{idx}")
+            if enable_popups:
+                obs_json_path = case_path / "observation_records" / str(idx) / "data.json"
+                obs_photo = _first_photo_for(obs_json_path)
+                obs_html = _make_popup_html(js, obs_photo, popup_image_width_px)
+                obs_popup = folium.Popup(obs_html, max_width=popup_image_width_px + 40)
+
             if phone_icon_path and phone_icon_path.exists():
                 icon = folium.CustomIcon(str(phone_icon_path), icon_size=(36, 36))
                 folium.Marker([lat, lon], icon=icon,
-                              tooltip=f"Obs {case_folder}-{idx}").add_to(obs_group)
+                              tooltip=obs_tooltip, popup=obs_popup).add_to(obs_group)
             else:
                 folium.Marker([lat, lon],
                               icon=folium.Icon(color="blue", icon="user"),
-                              tooltip=f"Obs {case_folder}-{idx}").add_to(obs_group)
+                              tooltip=obs_tooltip, popup=obs_popup).add_to(obs_group)
+
+            # small numeric label
             folium.map.Marker(
                 [lat + 0.00018, lon],
                 icon=DivIcon(icon_size=(150, 36), icon_anchor=(0, 0),
                              html=f'<b style="color:#1f77b4;font-size:12pt">{idx}</b>')
             ).add_to(obs_group)
 
-        # ----- UAV actual (object) -----
+        # ---------- UAV actual (object) ----------
         uav_lat = uav_lon = None
+        obj_popup = None
         if uav:
             uav_lat, uav_lon, _ = uav
             if center is None:
                 center = (uav_lat, uav_lon)
             overall_bounds_pts.append((uav_lat, uav_lon))
+
+            # Build popup/tooltip for the object (if requested)
+            obj_tooltip = folium.Tooltip(f"UAV actual – case {case_folder}")
+            if enable_popups:
+                # Resolve which object data.json path to read
+                if object_id.strip().lower() == "auto":
+                    cand = sorted((case_path / "object_records").glob("*/data.json"))
+                    obj_json_path = cand[0] if cand else None
+                else:
+                    obj_json_path = case_path / "object_records" / object_id / "data.json"
+
+                obj_html = None
+                if obj_json_path and obj_json_path.exists():
+                    try:
+                        obj_js = json.loads(obj_json_path.read_text(encoding="utf-8"))
+                    except Exception:
+                        obj_js = {}
+                    obj_photo = _first_photo_for(obj_json_path)
+                    obj_html = _make_popup_html(obj_js, obj_photo, popup_image_width_px)
+                if obj_html:
+                    obj_popup = folium.Popup(obj_html, max_width=popup_image_width_px + 40)
+
             if uav_icon_path and uav_icon_path.exists():
                 icon = folium.CustomIcon(str(uav_icon_path), icon_size=(46, 46))
                 folium.Marker([uav_lat, uav_lon], icon=icon,
-                              tooltip=f"UAV actual – case {case_folder}").add_to(uav_actual_group)
+                              tooltip=obj_tooltip, popup=obj_popup).add_to(uav_actual_group)
             else:
                 folium.Marker([uav_lat, uav_lon],
                               icon=folium.Icon(color="red", icon="star"),
-                              tooltip=f"UAV actual – case {case_folder}").add_to(uav_actual_group)
+                              tooltip=obj_tooltip, popup=obj_popup).add_to(uav_actual_group)
+
+            # red text label near the object
             folium.map.Marker(
                 [uav_lat + 0.00025, uav_lon],
                 icon=DivIcon(icon_size=(180, 36), icon_anchor=(0, 0),
                              html=f'<b style="color:red;font-size:13pt">UAV</b>')
             ).add_to(uav_actual_group)
 
-        # ----- UAV estimated (your algorithm) -----
+        # ---------- UAV estimated (your algorithm) ----------
         extras = {"angles": []}
         for _, _, _, _, js in observers:
             gyro = js.get("gyro", {}) or {}
@@ -353,13 +442,14 @@ def build_map_for_root(
                                   f'{f" ({error_m:.1f} m)" if error_m is not None else ""}</b>')
             ).add_to(uav_est_group)
 
+            # helper geometry lines (observers → est)
             for idx, lat, lon, _, _ in observers:
                 folium.PolyLine(
                     [(lat, lon), (est_lat, est_lon)],
                     color='gray', weight=1, opacity=0.6
                 ).add_to(uav_est_group)
 
-            # Terminal log + metrics row
+            # metrics row
             row = {
                 "case": case_folder,
                 "n_observers": len(observers),
@@ -369,30 +459,30 @@ def build_map_for_root(
                 "error_m": round(error_m, 3) if error_m is not None else None,
                 "method": info.get("method") if isinstance(info, dict) else None,
             }
-            print(f"[METRIC] case={case_folder}  n_obs={row['n_observers']}  "
-                  f"error_m={row['error_m']}")
+            print(f"[METRIC] case={case_folder}  n_obs={row['n_observers']}  error_m={row['error_m']}")
             metrics_out.append(row)
 
-        # ----- optional: distances from observers to actual UAV -----
+        # optional: distances from observers to actual UAV
         if uav_lat is not None and uav_lon is not None:
             for idx, lat, lon, _, _ in observers:
                 d = geodesic((lat, lon), (uav_lat, uav_lon)).meters
                 folium.map.Marker(
                     [lat - 0.0001, lon],
                     icon=DivIcon(icon_size=(150, 36), icon_anchor=(0, 0),
-                                 html=f'<span style="color:green;font-size:11pt">{d:.0f} m</span>')
+                                 html=f"<span style='color:green;font-size:11pt'>{d:.0f} m</span>")
                 ).add_to(obs_group)
 
+    # add groups
     obs_group.add_to(m)
     uav_actual_group.add_to(m)
     uav_est_group.add_to(m)
     folium.LayerControl(collapsed=False).add_to(m)
 
+    # center & bounds
     if center:
         m.location = [center[0], center[1]]
     if overall_bounds_pts:
         bounds = compute_bounds(overall_bounds_pts, margin_m=30)
         m.fit_bounds(bounds)
 
-    # Return both map and metrics for Streamlit
     return m, metrics_out
