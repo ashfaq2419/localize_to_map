@@ -14,3 +14,19 @@ The app calls ```core.build_map_for_root(...)``` to read the JSON files, run you
 - Popups on markers: click an observer/object pin to see an image (if present) and metadata (lat/lon/alt, yaw/pitch, etc.).
 - Keeps the previously-rendered map visible across Streamlit reruns (```st.session_state```).
 - “Clear Map” and “Quit App” buttons in the sidebar.
+
+## Requirements
+
+- Python 3.9+ (3.10–3.12 commonly used)
+- Packages:
+    - `streamlit` (UI)
+    - `folium` (map)
+    - `geopy` (distance)
+    - `pyproj` (core triangulation uses it)
+- (Optional) images named `photo.jpg` / `photo.jpeg` / `photo.png` placed next to each `data.json`.
+
+Install:
+
+```bash
+pip install streamlit folium geopy pyproj
+```
