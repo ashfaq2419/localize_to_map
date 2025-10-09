@@ -30,3 +30,18 @@ Install:
 ```bash
 pip install streamlit folium geopy pyproj
 ```
+
+## Requirements
+
+```bash
+localize_to_map/
+├─ new_app.py                 # Streamlit app (UI)
+├─ core.py                    # Map building + localization
+├─ dataset_sdp/               # Your dataset root (1/, 2/, 3/…)
+│  ├─ 1/
+│  │  ├─ object_records/1/data.json
+│  │  ├─ observation_records/1/data.json
+│  │  └─ observation_records/2/data.json
+│  └─ 2/
+│     └─ ...
+└─ README.md
